@@ -1,5 +1,7 @@
-import { RFValue } from "react-native-responsive-fontsize";
 import styled from "styled-components/native";
+
+import { RFValue } from "react-native-responsive-fontsize";
+import { FlatList } from "react-native";
 
 export const Container = styled.View`
   flex: 1;
@@ -23,3 +25,9 @@ export const Title = styled.Text`
   font-size: ${RFValue(15)}px;
   color: ${({ theme }) => theme.colors.text};
 `;
+
+export const CarList = styled(FlatList).attrs({
+  contentContainerStyle: {
+    padding: 24,
+  },
+})``;

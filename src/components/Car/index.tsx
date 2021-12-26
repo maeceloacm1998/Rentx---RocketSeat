@@ -6,6 +6,7 @@ import Gasoline from "../../assets/gasoline.svg";
 import {
   Information,
   Container,
+  ContainerCarImage,
   Image,
   ModelCar,
   TypeCar,
@@ -25,7 +26,7 @@ interface CarProps {
   picture: string;
 }
 
-export function Car({model,rent,type,picture}: CarProps) {
+export function Car({ model, rent, type, picture }: CarProps) {
   return (
     <Container>
       <Information>
@@ -42,7 +43,9 @@ export function Car({model,rent,type,picture}: CarProps) {
         </About>
       </Information>
 
-      <Image resizeMode="contain"  source={{uri: picture}}/>
+      <ContainerCarImage>
+        <Image resizeMode="contain" source={{ uri: picture }} />
+      </ContainerCarImage>
     </Container>
   );
 }

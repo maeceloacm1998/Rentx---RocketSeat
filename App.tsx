@@ -1,6 +1,7 @@
 import { StyleSheet} from "react-native";
 
 import { Home } from "./src/screens/Home";
+import { CarDetail } from "./src/screens/CarDetail";
 
 import AppLoading from "expo-app-loading"
 import {ThemeProvider} from "styled-components"
@@ -17,7 +18,7 @@ import {
   Archivo_500Medium,
   Archivo_600SemiBold,
 } from "@expo-google-fonts/archivo";
-import { useState } from "react";
+
 import theme from "./styles/theme";
 
 export default function App() {
@@ -36,7 +37,7 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Home />
+      <CarDetail />
     </ThemeProvider>
   )
 }
