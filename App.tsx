@@ -2,6 +2,8 @@ import { StyleSheet} from "react-native";
 
 import { Home } from "./src/screens/Home";
 import { CarDetail } from "./src/screens/CarDetail";
+import { Scheduling } from "./src/screens/Scheduling";
+
 
 import AppLoading from "expo-app-loading"
 import {ThemeProvider} from "styled-components"
@@ -37,16 +39,8 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <CarDetail />
+      <Scheduling />
     </ThemeProvider>
   )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});

@@ -65,7 +65,7 @@ export const Description = styled.Text`
 `;
 
 export const SubmitContainer = styled.View`
-  margin-bottom: ${getBottomSpace()};
+  margin-bottom: ${getBottomSpace()}px;
   background-color: ${({ theme }) => theme.colors.background_primary};
 
   align-items: center;
